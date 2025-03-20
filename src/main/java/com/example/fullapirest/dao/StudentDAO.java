@@ -8,4 +8,6 @@ public interface StudentDAO {
     List<Student>findAll();
     void save(Student theStudent);
     Student findById(Integer id);
+    void update(Student theStudent);
+    void delete(Integer id);
 }

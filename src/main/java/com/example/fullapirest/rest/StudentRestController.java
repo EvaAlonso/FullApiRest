@@ -33,4 +33,14 @@ public class StudentRestController {
         this.studentDAO.save(theStudent);
         return theStudent;
     }
+    @PutMapping("/students")
+    public Student updateStudent(@RequestBody Student theStudent){
+        this.studentDAO.update(theStudent);
+        return theStudent;
+    }
+    @DeleteMapping("/students/{id}")
+    public String deleteStudent(@PathVariable int id){
+        this.studentDAO.delete(id);
+        return "Deleted studentId: " + id;
+    }
 }
