@@ -16,7 +16,7 @@ public class FullapirestApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return runner -> {
-			Student student1 = new Student("Eva", "Alonso");
+			/*Student student1 = new Student("Eva", "Alonso");
 			Student student2 = new Student("Miller", "Montaña");
 			Student student3 = new Student("Antonio", "Cabrera");
 
@@ -26,7 +26,7 @@ public class FullapirestApplication {
 
             for (Student student : studentDAO.findAll()) {
                 System.out.println(student);
-            }
+            }*/
         };
 	}
 
